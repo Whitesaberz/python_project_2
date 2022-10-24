@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Caked Up - Order</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="{{ url_for('home') }}"><h6>Home</h6></a>
+        </nav>
+        <p>Double Caked Up!</p>
+        <nav>
+            <a href="{{ url_for('order') }}"><h6>Order</h6></a>
+        </nav>
+    </header>
+    <main>
+
+            <h2>Order Items</h2>
+            <table id="cupcake-order">
+                <th>
+                    <h5>Cupcake</h5>
+                </th>
+                <th>
+                    <h5>Price</h5>
+                </th>
+                <th>
+                    <h5>Quantity</h5>
+                </th>
+                {% for cupcake in cupcakes %}
+                <tr>
+                    <td>
+                        <h6>{{ cupcake[0] }}</h6>
+                    </td>
+                    <td>
+                        <h6>Price: {{ cupcake[1] }}</h6>
+                    </td>
+                    <td>
+                        <h6>Qty: {{ cupcake[2] }}</h6>
+                    </td>
+                </tr>
+                
+                {% endfor %}
+            </table>
+    </main>
+    <img id = "order-cupcake-photo"src="..\static\images\natalie-chaney-FQJMhdEYXtA-unsplash.jpg" alt="order-cupcakes-photo">
+</body>
+</html>

@@ -1,0 +1,9 @@
+size,name,price,flavor,frosting,sprinkles,filling
+regular,Stars and Stripes,2.99,Vanilla,Vanilla,"['Red', 'White', 'Blue', 'Chocolate']",Chocolate
+mini,Oreo Madness,1.99,Oreo,Vanilla,['Oreo pieces'],
+large,Red Velvet,3.99,Red Velvet,Cream Cheese,[],
+regular,Triple Chocolate,2.99,Chocolate,Chocolate,[],Chocolate
+regular,Strawberry,2.99,Stawberry,Vanilla,[],
+large,Berry Blast,3.99,Raspberry,Blueberry,[],Strawberry
+mini,Birthday Cake,1.99,Funfetti,Vanilla,[],
+regular,Halloween,2.99,Pumpkin,Cinnamon,[],Vanilla

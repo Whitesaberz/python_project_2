@@ -1,0 +1,4 @@
+size,name,price,flavor,frosting,sprinkles,filling
+regular,Stars and Stripes,2.99,Vanilla,Vanilla,Chocolate,"['Red', 'White', 'Blue', 'Chocolate']"
+mini,Oreo Madness,1.99,Oreo,Vanilla,,['Oreo pieces']
+regular,Triple Chocolate,2.99,Chocolate,Chocolate,Chocolate,[]

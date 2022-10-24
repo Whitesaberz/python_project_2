@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', serif
+  }
+   
+  body {
+    background-color: #add8e6;
+    justify-content: center;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  header {
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #2f4f4f;
+    background-color: #ffffe0;
+    box-shadow: 2px 2px 4px rgb(34, 154, 194);
+    }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 24px;
+    min-height: 300px;
+  }
+
+  .cupcakes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+
+  .cupcake-card {
+    background-color: #2e8b57;
+    width: 200px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 12px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 2px 2px 4px #229ac2;
+    align-items: center;
+  
+  }
+
+  .cupcake-cover-image {
+    width: 200px;
+    height: 200px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+
+  button {
+    background-color: #232323;
+    width: 75px;
+    height: 50px;
+    color: #40e0d0;
+    border: none;
+    margin: 5px;
+    border-radius: 50%;
+  }
+
+  #home-cupcake-photo {
+    height: 600px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+  }
+  #order-cupcake-photo {
+    height: 600px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+  }
+  #cart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+  }
+  #cupcake-order {
+    width: 85%;
+  }
+

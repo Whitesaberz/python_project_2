@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Caked Up - Home</title>
+    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="{{ url_for('home') }}"><h6>Home</h6></a>
+        </nav>
+        <p>Double Caked Up!</p>
+        <nav>
+            <div class="cart-container">
+                <a href="{{ url_for('order') }}">
+                    <h7>Cart - {{ items_num }}</h7>
+                </a>
+                <h7>Total: ${{ order_total }}</h7>
+            </div>
+        
+        </nav>
+    </header>
+    <main>
+        <img id = "home-cupcake-photo"src="..\static\images\sara-julie-AL87wdBqPuE-unsplash.jpg" alt="cupcakes-photo">
+        
+        {% for cupcake in cupcakes %}
+        <section id="cupcakes-container">
+            
+                <img alt='cupcake cover image' src="https://images.unsplash.com/photo-1599785209707-a456fc1337bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80" class="cupcake-cover-image"/>
+                <div class="cupcakes-card">
+                    <a href="{{ url_for('individual_cupcake', name=cupcake['name']) }}">
+                        <h3>{{ cupcake["name"] }}</h3>
+                    </a>
+                        <h5>Flavor: {{ cupcake["flavor"] }}</h4>
+                        <h5>Frosting: {{ cupcake["frosting"] }}</h4>
+                
+                        <h4>Price: ${{ cupcake["price"] }}</h4>
+                    <a href="{{ url_for('add_cupcake', name=cupcake['name']) }}">
+                        <button>Add to Cart</button>
+                    </a>
+                </div>
+            </section>
+            {% endfor %} 
+        </div>
+    </main>
+
+    </body>
+</html>
